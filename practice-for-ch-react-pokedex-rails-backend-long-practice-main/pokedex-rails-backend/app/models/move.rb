@@ -14,7 +14,7 @@ class Move < ApplicationRecord
     #associations
     has_many :poke_moves
 
-    has_many :pokemons,
+    has_many :pokemon,
         through: :poke_moves,
         source: :pokemon
 end
